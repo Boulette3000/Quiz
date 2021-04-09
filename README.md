@@ -1,2 +1,0 @@
-# Quiz
-Projet Quiz NSI
