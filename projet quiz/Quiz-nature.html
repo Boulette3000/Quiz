@@ -1,0 +1,89 @@
+<HTML>
+
+<HEAD>
+ <link rel="stylesheet" href="mise-en-forme.css">
+ <META HTTP-EQUIV="Content-Language" content="fr">
+ <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+ <TITLE>QCM</TITLE>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!-- cacher code
+ function test(nom,n) {
+  var rep=true;
+  for (i=0; i<n; i++) { 
+   if (nom[i].value==1 && nom[i].checked==false) rep=false;
+   if (nom[i].value==0 && nom[i].checked==true) rep=false;
+  }
+  return rep;
+ }
+ //fin du script. -->
+ </SCRIPT>
+ 
+</HEAD>
+
+<BODY id="format" background=arriereplan.jpg>
+<H1 id="texte-blanc">QCM avec cases à cocher</H1>
+<HR>
+<FORM id="texte-blanc" NAME="qcm1">
+<B>Qu'est-ce qui crée(nt) les vagues dans la mer ?</B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=1>Le vent</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=0>Les brise-lames</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=0>Les bateaux</INPUT>
+<BR><BR>
+
+<B><INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix1,3)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</B>
+</FORM>
+<FORM id="texte-blanc" NAME="qcm2">	
+<B>Qu'elle est la température de l'eau de mer à 2000 mètres de profondeur ? </B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=1>2°</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=0>8°</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=0>12°</INPUT>
+<BR><BR>
+<INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix2,3)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</FORM>
+
+</FORM>
+<FORM id="texte-blanc" NAME="qcm3">	
+<B>Que sont les grains de cafés ? </B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=0>Les bourgons du caféier</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=0>Les fruits du caféier</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=1>Les graines de la cerise du caféier</INPUT>
+<BR><BR>
+<INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix3,3)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</FORM>
+
+<FORM id="texte-blanc" NAME="qcm4">
+<B>Combien de volcans sont en activité à la surface de la Terre ?</B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=0>1200</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=1>1500</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=0>2100</INPUT>
+<BR><BR>
+
+<B><INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix4,3)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</B>
+</FORM>
+
+<HR>	
+</BODY>
+</HTML>
+

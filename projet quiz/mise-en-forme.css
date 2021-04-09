@@ -1,0 +1,82 @@
+#CentreTexte  {
+  text-align: center;
+}
+#titre {
+	 text-indent: 200px;
+	 color: white;
+	 bottom: -200px;
+	 text-decoration: underline;
+	 font-size: 400%
+}
+#positionthemes {
+	 color: white;
+	 bottom: -400px;
+	 line-height: 2.0;
+	 font-size: 200%;
+	 margin-left: 200px;
+     padding-left: 200px;
+}
+#texte-blanc {
+	 color: white;
+}
+
+#texte-blanc-petite-ligne {
+	 color: white;
+	 line-height: 0.1;
+}
+
+#lien-blanc {
+     color: white;
+}
+
+#format {
+  background-origine: border-box;
+  background-repeat: no-repeat;
+}
+.br {
+  color: white;
+}
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #00000
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  width: 450px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 520px;
+  bottom: -50px;
+ 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 40px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+}

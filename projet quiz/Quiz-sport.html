@@ -1,0 +1,92 @@
+<HTML>
+
+<HEAD>
+ <link rel="stylesheet" href="mise-en-forme.css">
+ <META HTTP-EQUIV="Content-Language" content="fr">
+ <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+ <TITLE>QCM</TITLE>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!-- cacher code
+ function test(nom,n) {
+  var rep=true;
+  for (i=0; i<n; i++) { 
+   if (nom[i].value==1 && nom[i].checked==false) rep=false;
+   if (nom[i].value==0 && nom[i].checked==true) rep=false;
+  }
+  return rep;
+ }
+ //fin du script. -->
+ </SCRIPT>
+ 
+</HEAD>
+
+<BODY id="format" background=arriereplan.jpg>
+<H1 id="texte-blanc">QCM avec cases à cocher</H1>
+<HR>
+<FORM id="texte-blanc" NAME="qcm1">
+<B>Quel est le nombre de rameurs en aviron ?</B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=0>- 6</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=1>- 8</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=0>- 10</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix1" VALUE=0>- 12</INPUT>
+<BR><BR>
+
+<B><INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix1,4)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</B>
+</FORM>
+<FORM id="texte-blanc" NAME="qcm2">	
+<B>Quel est la largeur d'un but de football ?</B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=0>- 7,12 m</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=0>- 7,22 m</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=1>- 7,32 m</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix2" VALUE=0>- 7,42 m</INPUT>
+<BR><BR>
+<INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix2,4)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</FORM>
+
+</FORM>
+<FORM id="texte-blanc" NAME="qcm3">	
+<B>Quel est l'ancêtre du rugby ? </B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=0>- La Serre</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=0>- Le Calcio</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=1>- La Soule</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix3" VALUE=0>- Le Real-be</INPUT>
+<BR><BR>
+<INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix3,4)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</FORM>
+
+<FORM id="texte-blanc" NAME="qcm4">
+<B>A quel sport doit-on jouer pendant 2 mi-temps de 40 minutes ?</B><BR>
+<BR>
+<B>Réponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=1>- Au Rugby</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=0>- Au Football</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=0>- Au Basket-ball</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix4" VALUE=0>- Au Handball</INPUT>
+<BR><BR>
+
+<B><INPUT TYPE=BUTTON NAME="bouton" VALUE="Vérifier"
+ ONCLICK="if (test(choix4,4)) {alert('Bonne réponse.')} 
+          else {alert('Réponse fausse.')}">
+</INPUT>
+</B>
+</FORM>
+
+<HR>	
+</BODY>
+</HTML>
